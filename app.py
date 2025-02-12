@@ -41,7 +41,7 @@ def get_tech_related_answer(user_input):
             
             # Ensure relevance
             if re.search(r"\b(laptop|computer|PC|keyboard|market|trend|consumer|sales|demand|technology|hardware|pricing)\b", full_response.lower()):
-                max_length = 250
+                max_length = 1000
                 return full_response[:max_length] + ("..." if len(full_response) > max_length else "")
             else:
                 return "I can only answer questions about trending tech devices and market insights."
